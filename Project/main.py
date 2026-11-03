@@ -183,7 +183,7 @@ def analyse_dynamique(secret, texte_long):
 
     for count, lettre in enumerate(secret):
         # Tous les 20 caractères, on réévalue la langue en fonction du texte déjà trouvé
-        if count > 0 and count % 500 == 0:
+        if count > 0 and count % 80 == 0:
             langue_detectee = detecter_langue(resultat)
             if langue_detectee == 'FR':
                 active_list = liste_lettres_francais
